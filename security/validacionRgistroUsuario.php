@@ -1,5 +1,5 @@
 <?php
-include_once "./seguridad/conexion.php";
+include_once "./security/conexion.php";
 $conexion_vR = $conexion;
 
 extract($_REQUEST);

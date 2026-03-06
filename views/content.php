@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-
 <body>
 
     <!-- ÁREA DE TRABAJO -->
@@ -10,5 +7,3 @@
     </main>
 
 </body>
-
-</html>

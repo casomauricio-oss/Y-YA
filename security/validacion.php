@@ -23,7 +23,7 @@ $rtaU = $rtaU -> fetchAll();
 
 if ($rta) {
     foreach ($rtaU as $row) {
-        echo 'Bienbenido'. $row ['nombre'] ."". $row ['apellidos'];
+        echo 'Bienvenido'. $row ['nombre'] ."". $row ['apellidos'];
     }
 } else {
     echo "error credenciales";
