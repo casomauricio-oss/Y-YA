@@ -1,11 +1,11 @@
 <?php
 include "./../view/RegistroUsuarios.php";
 
-$var = new UserController();
+$var = new AuthController();
 
 switch ($_REQUEST["X"]) {
     case '1': // Registro de usuario
-        $var->registroUsuario();
+        include("./../view/RegistroUsuarios.php");
         break;
     case '2': // Reporte
         # code ...
