@@ -36,6 +36,7 @@
         <input name="direccion" type="text" value="" placeholder="ingrese direccion">
         <input name="Guardar" type="submit" value="Guardar" placeholder="guardar">
     </form>
+    <?php include './views/footer.php'; ?>
 </body>
 
 </html>
