@@ -16,8 +16,11 @@
 <body>
     <!-- Contenedor principal del login -->
     <div class="container">
+        <div class="container-img"> <!-- Logo de YÁYA -->
+            <img src="./../public/img/logo.png" alt="Logo de YÁYA">
+        </div>
         <!-- Titulo de la pagina -->
-        <h2 class="title-login">Login YÁYA</h2>
+        <h2 class="title-login">LogIn YÁYA</h2>
         <!-- Formulario de login -->
         <form method="POST" action="./../index.php" class="form-login">
             <div class="form-group">
