@@ -2,7 +2,11 @@
     background-color: #861b49;
     color: white;
     text-align: center;
-    padding: 4% 0;
+    padding: 2%;
+    margin-top: 6%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-content {
@@ -43,7 +47,7 @@
 }
 
 .footer-copyright {
-    margin-top: 5px;
+    padding: 2%;
     font-size: 14px;
 }
 

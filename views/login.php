@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al CSS de los estilos generales -->
     <link rel="stylesheet" type="text/css" media="screen" href="./../public/css/style.css">
+    <!-- Enlace al CSS específico del login -->
     <link rel="stylesheet" type="text/css" media="screen" href="./../public/css/login.css">
+    <!-- Enlace al CSS específico del footer -->
     <link rel="stylesheet" type="text/css" media="screen" href="./../public/css/footer.css">
 </head>
 

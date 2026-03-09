@@ -1,7 +1,7 @@
 /* CONTAINER DE LOGIN */
 .container {
-    max-width: 80%;
-    margin: 9% auto;
+    max-width: 90%;
+    margin: 5% auto;
     padding: 20px;
     align-items: center;
 }
@@ -9,21 +9,22 @@
 /* TITULO DE LOGIN */
 .title-login {
     text-align: center;
-    margin: 5% auto;
+    margin: 1% auto 9%;
     color: #1e293b;
+    font-size: 3rem;
 }
 
 /* Etiquetas */
 .form-login label {
     display: block;
     color: #1e293b;
-    margin: 5% 12%;
+    margin: 11% 0% 0% 6%;
     text-wrap-style: auto;
 }
 
 /* FORMULARIO DE LOGIN */
 .form-login {
-    max-width: 60%;
+    max-width: 90%;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
@@ -53,7 +54,7 @@
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    margin: 2% 12%;
+    margin: 8% 12%;
 }
 
 .form-login button:hover {
@@ -62,13 +63,13 @@
 
 .icon-user {
     display: block;
-    margin: 0;
+    margin: 6% 0%;
     width: 10%;
     height: 5%;
 }
 
 .form-group {
-    margin: 5% 15%;
+    margin: 3% 15%;
     display: flex;
 }
 
@@ -81,7 +82,7 @@
 }
 
 .actions p {
-    margin: 3%;
+    margin: 6% 0%;
     color: #1e293b;
 }
 
