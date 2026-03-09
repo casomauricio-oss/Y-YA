@@ -5,20 +5,40 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="./../public/css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./../public/css/login.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./../public/css/footer.css">
 </head>
 
 <body>
-    <!-- Titulo de la pagina -->
-    <h2 class = "title-login" >Login YÁYA</h2>
-    <!-- Formulario de login -->
-    <form method="POST" action="./../index.php" class="form-login">
-        <input type="text" id="username" name="username" required placeholder="Usuario">
-        <br><br>
-        <input type="password" id="password" name="password" required placeholder="Contraseña">
-        <br><br>
-        <button type="submit" name="login" value="login">Iniciar Sesión</button>
-    </form>
+    <!-- Contenedor principal del login -->
+    <div class="container">
+        <!-- Titulo de la pagina -->
+        <h2 class="title-login">Login YÁYA</h2>
+        <!-- Formulario de login -->
+        <form method="POST" action="./../index.php" class="form-login">
+            <div class="form-group">
+                <img src="./../public/img/user.svg" alt="Icono de usuario" class="icon-user">
+                <label for="username">Ingrese su nombre de usuario:</label>
+            </div>
+            <input type="text" id="username" name="username" required placeholder="Usuario">
+            <br><br>
+            <div class="form-group">
+                <img src="./../public/img/user-lock.svg" alt="Icono de usuario" class="icon-user">
+                <label for="password">Ingrese su contraseña:</label>
+            </div>
+            <input type="password" id="password" name="password" required placeholder="Contraseña">
+            <br><br>
+            <hr>
+            <div class="actions">
+                <button type="submit" name="login" value="login">Iniciar Sesión</button>
+                <p> No tienes una cuenta? <a href="#">Registrate</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <!-- Incluyendo el footer -->
+    <?php include './footer.php'; ?>
 </body>
 
 </html>
