@@ -1,17 +1,20 @@
 <?php
-include "./../views/RegistroUsuarios.php";
+// Este archivo se encarga de enrutar las vistas de los usuarios según el parámetro X en la URL
+require_once(__DIR__ . '/../controllers/authController.php');
+// Extrae el parámetro X de la URL, si no existe asigna null
+$x = $_REQUEST['X'] ?? null;
 
-$var = new AuthController();
-
-switch ($_REQUEST["X"]) {
-    case '1': // Registro de usuario
-        include("./../views/RegistroUsuarios.php");
-        require $contenido = "./../views/RegistroUsuarios.php";
+// Define el contenido según el parámetro X
+switch ($x) {
+    case '1':
+        $contenido = "./../views/formRegisterUsers.php";
         break;
-    case '2': // Reporte
-        # code ...
+    case '2':
+        $contenido = "./../views/dashboard.php";
         break;
     default:
-        # code ...
+        $contenido = "./../views/dashboard.php";
         break;
 }
+// Incluye la vista principal que contiene el navbar, sidebar y el área de contenido dinámico
+require_once(__DIR__ . '/../views/home.php');
