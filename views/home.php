@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../public/css/content.css"> <!-- Estilos para el contenido principal -->
     <link rel="stylesheet" type="text/css" media="screen" href="../public/css/container.css"> <!-- Estilos para el contenedor principal -->
     <link rel="stylesheet" type="text/css" media="screen" href="../public/css/footer.css"> <!-- Estilos para el pie de página -->
+    <link rel="stylesheet" type="text/css" media="screen"  href="../public/css/formRegisterUsers.css"> <!-- Estilos para la sección de información -->
 </head>
 
 <body>
