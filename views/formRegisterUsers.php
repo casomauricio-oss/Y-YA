@@ -5,6 +5,7 @@
     <!-- usuario -->
     <div class="form-register">
         <form method="POST" action="/security/validacionRgistroUsuario.php">
+            <!-- Información del usuario -->
             <div class="infoUser">
                 <label for="nombreUsuario">Nombre de usuario:</label>
                 <input name="nombreUsuario" type="text" value="" placeholder="Ingresar Nombre" required>
@@ -15,8 +16,7 @@
                 <label for="FechaNacimiento">Fecha de Nacimiento:</label>
                 <input name="FechaNacimiento" type="date" value="" placeholder="Ingrese fecha de nacimiento" required>
             </div>
-
-            <label for="fechaRegistro">Fecha de Registro:</label>
+            <!-- Información adicional del usuario -->
             <div class="infoUserSec">
                 <input name="fechaRegistro" type="hidden" value="<?php echo date('Y-m-d H:i:s'); ?>">
 
@@ -40,7 +40,9 @@
                 <!-- Direcion -->
                 <label for="direccion">Dirección:</label>
                 <input name="direccion" type="text" value="" placeholder="ingrese direccion" required>
-                <input name="Guardar" type="submit" value="Guardar">
+                <div class="contentButton">
+                    <input name="Guardar" type="submit" value="Guardar">
+                </div>
             </div>
         </form>
     </div>
