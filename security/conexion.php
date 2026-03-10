@@ -2,8 +2,10 @@
 function conectionDB(){
     try {
         $conn = new PDO("mysql:host=localhost;dbname=basedatos_yaya", "root", "");
+        return $conn;
     } catch (PDOException $e) {
         echo "Error de conexión a la base de datos.";
+        return null;
     }
 }
 

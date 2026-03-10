@@ -1,13 +1,14 @@
 <?php
 
-include_once "./seguridad/conexion.php";
+include_once "../security/conexion.php";
+$conexion = conectionDB();
 extract($_REQUEST);
 
 $_usuario = $_REQUEST ['email'];
-$pass = $_REQUEST ['pass'];
+$pass = $_REQUEST ['contraseña'];
 
 $sql = $conexion -> prepare("SELECT * FROM credenciales WHERE email=? AND contraseña=?");
-$sql -> bindParam(1,$usuario);
+$sql -> bindParam(1,$_usuario);
 $sql -> bindParam(2,$pass);
 $sql -> execute();
 
@@ -15,15 +16,15 @@ $rta = $sql -> fetchAll();
 
 
 if ($rta) {
-    $sqlU = $conexion_U -> prepare ("SELECT * FROM usuario WHERE emeil=?");
-    $sqlU -> bindParam(1,$usuario);
+    $sqlU = $conexion -> prepare ("SELECT * FROM usuarios WHERE nombreUsuario=?");
+    $sqlU -> bindParam(1,$_usuario);
     $sqlU -> execute ();
 
-$rtaU = $rtaU -> fetchAll();
+$rtaU = $sqlU -> fetchAll();
 
-if ($rta) {
+if ($rtaU) {
     foreach ($rtaU as $row) {
-        echo 'Bienvenido'. $row ['nombre'] ."". $row ['apellidos'];
+        echo 'Bienvenido'. $row ['nombreUsuario'] ."". $row ['apellido'];
     }
 } else {
     echo "error credenciales";
