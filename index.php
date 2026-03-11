@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <?php include "../frontend/componentes/navbar.php"; ?>
+    <?php include "./../frontend/componentes/navbar.php"; ?>
 
     <?php include "../frontend/componentes/sidebar.php"; ?>
 
