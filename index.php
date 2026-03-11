@@ -1,5 +1,5 @@
 <?php
-include_once '.controllers/authController.php';
+include_once './controllers/authController.php';
 // Controlador de autenticacion 
 if (isset($_POST['login'])) {
     $auth = new AuthController();
