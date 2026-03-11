@@ -1,0 +1,118 @@
+/* CONTAINER DE LOGIN */
+.container {
+    max-width: 60%;
+    margin: 5% auto;
+    padding: 20px;
+    align-items: center;
+}
+
+.container-img {
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    height: auto;
+}
+
+.container-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 5px 5px 0px 1px #1e293b;
+}
+
+/* TITULO DE LOGIN */
+.title-login {
+    text-align: center;
+    margin: 5% auto;
+    color: #1e293b;
+    font-size: 3rem;
+}
+
+/* Etiquetas */
+.form-login label {
+    display: block;
+    color: #1e293b;
+    margin: 11% 0% 0% 6%;
+    text-wrap-style: auto;
+}
+
+/* FORMULARIO DE LOGIN */
+.form-login {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-login input {
+    width: 70%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 1% 12%;
+}
+
+.form-login input:hover {
+    border-color: #3b82f6;
+    cursor: pointer;
+}
+
+.form-login input:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+.form-login hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.form-login button {
+    width: 70%;
+    padding: 10px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 8% 12%;
+    font-size: 1.5rem;
+}
+
+.form-login button:hover {
+    background-color: #2563eb;
+}
+
+.icon-user {
+    display: block;
+    margin: 6% 0%;
+    width: 10%;
+    height: 5%;
+}
+
+.form-group {
+    margin: 3% 15%;
+    display: flex;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 15%;
+    align-items: center;
+}
+
+.actions p {
+    margin: 6% 0%;
+    color: #1e293b;
+}
+
+.actions a {
+    color: #3b82f6;
+    text-decoration: none;
+    margin: 5px 0;
+}
